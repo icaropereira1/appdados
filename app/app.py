@@ -8,7 +8,7 @@ st.title("Bem-vindo à Análise Exploratória das Despesas de Viagem")
 @st.cache_resource
 
 def load_data():
-    data = pd.read_csv("C:\streamlit\dataset\dados.csv", sep=";")
+    data = pd.read_csv("dados.csv", sep=";")
     data['PROPORCAO'] = data['VALOREMPENHO'] / data['PIB']
     return data
 
